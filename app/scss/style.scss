@@ -1,0 +1,73 @@
+@import "iconfont";
+html,body{
+    height: 100%;
+}
+body{
+    font-family: 'Comfortaa', cursive;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#img{
+    width: 1000px;
+}
+h1{
+    font-family: 'Lobster';
+    font-size: 4em;
+    text-align: center
+}
+h2{
+    margin-top:0;
+}
+ul{
+    padding: 0;
+    margin-bottom: 20px;
+}
+li{
+    list-style: none;
+    margin-bottom:10px;
+
+    &[class^="icon-"]:before{
+        font-size: 200%;
+        margin-right: 20px;
+        vertical-align: middle;
+    }
+}
+.main-container{
+    width: 60vh;
+    background: white;
+}
+.link-boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: justify;
+}
+section{
+    flex: 1 0 0;
+    padding: 0 1em 1em;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+@media (max-width:800px){
+    h1{
+        font-size: 3em;
+    }
+}
+@media (max-width:450px){
+    h1{
+        font-size: 2em;
+    }
+    .main-container{
+        width: 100%;
+    }
+    .link-boxes{
+        flex-direction: column;
+    }
+}
